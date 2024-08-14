@@ -16,7 +16,8 @@ header {
     max-width: 100%;
     height: auto;
     display: block;
-    width: 60%;
+    width: 100%;
+    border-radius: 25px;
 }
 
 .center {
@@ -29,15 +30,19 @@ header {
 }
 
 .border {
-    border: 10px solid rgb(6, 6, 17);
-    margin-bottom: 3%;
+    
+    
+    margin-top: 8%;
     width: 80%;
+    border-bottom: 1px solid rgb(163, 159, 159);
+    padding-bottom: 8%;
     
 }
 
 .picture {
-    max-width: 40%;
-    height: auto;
+    max-width: 50%;
+    border-radius: 25px;
+    object-fit: contain;
 }
 
 .flexbox {
@@ -46,6 +51,18 @@ header {
 }
 
 .border-text {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
+    text-wrap: wrap;
+}
+
+.quote {
+    font-weight: 800px;
+    font-size: 1.5rem;
+}
+
+p:last-of-type, article:last-of-type {
+    border: none;
+    margin-bottom: 0;
+
 }
