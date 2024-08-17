@@ -52,16 +52,21 @@ h1 {
   text-wrap: wrap;
 }
 
+
+p:last-of-type, article:last-of-type {
+  border: none;
+  margin-bottom: -8%;
+} 
+
 .quote {
   font-weight: 800;
   font-size: 2rem;
 }
 
-p:last-of-type, article:last-of-type {
-  border: none;
-  margin-bottom: 0;
-} 
-
 p {
-  font-size: 2rem;
+  font-size: 1.30rem;
+}
+
+figcaption {
+  font-size: 1.3rem;
 }
