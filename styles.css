@@ -8,7 +8,8 @@ html{
 }
 
 header {
-  bottom: 50%;
+  margin: 2% 0 5% 0;
+
 }
 
 h1 {
@@ -21,6 +22,11 @@ h1 {
   display: block;
   width: 60%;
   border-radius: 25px;
+  margin-bottom: 2%;
+}
+
+figcaption {
+  font-size: .7rem;
 }
 
 .center {
@@ -29,9 +35,7 @@ h1 {
 }
 
 .border { 
-  margin-top: 8%;
   width: 80%;
-  border-bottom: 1px solid rgb(163, 159, 159);
   padding-bottom: 8%;  
 }
 
@@ -52,12 +56,6 @@ h1 {
   text-wrap: wrap;
 }
 
-
-p:last-of-type, article:last-of-type {
-  border: none;
-  margin-bottom: -8%;
-} 
-
 .quote {
   font-weight: 800;
   font-size: 2rem;
@@ -67,6 +65,10 @@ p {
   font-size: 1.30rem;
 }
 
-figcaption {
-  font-size: 1.3rem;
+section article p {
+  text-align: left;
+}
+
+hr {
+  margin: 4%;
 }
