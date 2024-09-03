@@ -1,74 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid red; */
 }
 
+:root {
+  --text: #e9e8f9;
+  --background: #111142;
+  --primary: #aaa8c1;
+  --accent: #20B2AA;
+}
+
+/* UTILITY */
+
+.center-txt { 
+  text-align: center;
+}
+
+
+/* GENERAL STYLE */
+
 html{
-  background-color: rgb(17, 17, 66);
-  color: rgb(163, 159, 159);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+main {
+  max-width: 1440px;
+}
+
+img {
+  display: block;
+  width: 50%;
+  margin-bottom: 3rem;
+  border-radius: 30px;
+  margin-top: 3rem;
+}
+
+.welcome-image {
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 1em;
+  border-radius: 30px;
 }
 
 header {
-  margin: 2% 0 5% 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 2px black;
+}
 
+section {
+  width: 100%;
 }
 
 h1 {
   font-size: 3rem;
+  font-family: 'Noto Sans Tamil', sans-serif;
 }
 
-#image{
-  max-width: 100%;
-  height: auto;
-  display: block;
-  width: 60%;
-  border-radius: 25px;
-  margin-bottom: 2%;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Noto Sans Tamil', sans-serif;
 }
 
-figcaption {
-  font-size: .7rem;
+figure {
+  margin-bottom: 2rem;
 }
 
-.center {
-  margin: 0 auto 0 auto;   
-  text-align: center;
+article {
+  margin-bottom: 6rem;
+  border: 2px solid var(--text);
+  width: 70%;
+  border-radius: 30px;
+  padding: 1rem;
+  
 }
 
-.border { 
-  width: 80%;
-  padding-bottom: 8%;  
-}
-
-.picture {
-  max-width: 50%;
-  border-radius: 25px;
-  object-fit: contain;
-}
-
-.flexbox {
+article,
+figure,
+body,
+section {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.border-text {
-  max-width: 30%;
-  height: auto;
-  text-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quote {
   font-weight: 800;
   font-size: 2rem;
+  width: 100%;
+  border: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: #20B2AA;
+}
+
+a:hover, a:focus-within {
+  opacity: 1.9;
 }
 
 p {
-  font-size: 1.30rem;
+  text-indent: 1rem;
+  text-align: justify;
 }
 
-section article p {
-  text-align: left;
-}
+@media screen and (max-width: 769px) {
+  .welcome-image {
+    width: 100%;
+  }
 
-hr {
-  margin: 4%;
+  article {
+    width: 95%;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  .quote {
+    font-size: 1.5rem;
+  }
 }
